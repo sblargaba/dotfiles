@@ -5,8 +5,7 @@ Python script that with a YQL query fetches information in JSON format about wea
 The information are then rendered by conky with the aid of a icon set.  
   
   
-![Preview](http://raw.github.com/sblargaba/dotfiles/master/conky/preview.png 
-"Preview")
+![Preview](http://raw.github.com/sblargaba/dotfiles/master/conky/preview.png "Preview")
 
 Icons
 -----
