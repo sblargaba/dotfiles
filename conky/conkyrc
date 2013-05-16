@@ -1,0 +1,42 @@
+update_interval 1.0
+total_run_times 0
+
+alignment tr
+gap_x 10
+gap_y 80
+
+use_xft yes
+override_utf8_locale yes
+xftfont Sans:size=9
+
+border_width 0
+border_inner_margin 0
+border_outer_margin 0
+draw_shades no
+
+own_window yes
+own_window_type override #Change to normal when using GNOME Shell
+own_window_title "Flat-Weather"
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+
+max_text_width 0
+
+default_color FFFFFF
+color1 FFFFFF
+
+text_buffer_size 384
+double_buffer yes
+no_buffers yes
+
+imlib_cache_size 0
+
+TEXT
+
+
+
+
+
+${execpi 300 ~/.config/conky/weather.py}
+
+

@@ -1,0 +1,13 @@
+SETUP
+  Variables:
+    city        - Location name displayed in bold
+    location    - Location code to retrieve info
+    unit        - Lowercase unit for temperature (c or f)
+    
+    bfont       - Font for bold text (city and temperature)
+    bsize       - Size for bold text
+    font        - Font for regular text (conditions)
+    size        - Size for regular text
+    
+    icon_size   - Size of icon set
+
