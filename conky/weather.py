@@ -6,16 +6,17 @@ import json
 city = "" # Add final "," to city string
 location = "ITXX0081" # Find yours at http://aspnetresources.com/tools/weatherIdResolver
 unit = "c" # Lowercase
+icon_folder = "~/.config/conky/Flat/" # Full path. Ends with a '/'
 
 # RENDER PARAMETERS
-font = ""
 bfont = ""
 bsize = 12
+font = ""
 size = int(bsize*3/4)
+icon_size = 128
+
 bfstring = "${{font {0}:Bold:size={1}}}".format(bfont, bsize)
 fstring = "${{font  {0}:size={1}}}".format(font, size)
-
-icon_size = 128
 goto = "${{goto {0}}}".format(icon_size + 14)
 
 # WEB PARAMATERS
@@ -34,5 +35,5 @@ data = data['query']['results']['channel']['item']['condition']
 #print(data)
 print(bfstring + goto + city + data['temp'] + "°" + unit.upper())
 print(fstring + goto + data['text'])
-print("${image ~/.config/conky/Flat/" + data['code'] + ".png}")
+print("${image " + icon_folder + data['code'] + ".png}")
 
