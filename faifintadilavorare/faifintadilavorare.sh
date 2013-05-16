@@ -1,12 +1,15 @@
-file=~simo/My_Projects/faifintadilavorare/compilazione
-linee=`wc -l $file | awk '{print $1}'`
+#!/bin/bash
+
+path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+path+=/compilazione
+linee=`wc -l $path | awk '{print $1}'`
 divider=200
 
 clear
 echo "[`whoami`@`hostname` build]$ make"
 while :
 do numeroriga=`expr $numeroriga + 1`
-  sed -n -e "${numeroriga}p" $file
+  sed -n -e "${numeroriga}p" $path
   if [ $numeroriga -gt $linee ]
   then numeroriga=0
   fi
