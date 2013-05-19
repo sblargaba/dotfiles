@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from random import gauss
-from os import getcwd
+from os.path import dirname
 from time import sleep, time
 
 speed = 0.1
@@ -8,7 +8,7 @@ sigma = 0.05
 fname = "compilazione"  # path relative to script
 
 start = time()
-with open(getcwd() + "/" + fname, encoding='utf-8') as fin:
+with open(dirname(__file__) + "/" + fname, encoding='utf-8') as fin:
   try:
     while (True):
       for line in fin:
