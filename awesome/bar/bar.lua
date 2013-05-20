@@ -10,8 +10,6 @@ cpu_icon	= themes_dir .. "cpu.png"
 bat_icon	= themes_dir .. "battery.png"
 net_icon	= themes_dir .. "net.png"
 hdd_icon	= themes_dir .. "hdd.png"
-rarrow		= themes_dir .. "arrl_ld_sf_purple.png"
-larrow		= themes_dir .. "arrl_dl_sf_rg.png"
 
 --{{---| Colors |--------------------------------------------------------------
 
