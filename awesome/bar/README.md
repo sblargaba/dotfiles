@@ -9,6 +9,7 @@ Notes
  [powerline-patched font](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher/) 
  is needed (if you use arch, several packet are available on aur).
  * Icons are not supplied, a proper icon set is needed.
+ * [Vicious](http://awesome.naquadah.org/wiki/Vicious) is needed for the widgets to work.
  * For the colors to make sense, the correct order for the rc.lua should be:
     1.  arrowend
     2.  memicon
