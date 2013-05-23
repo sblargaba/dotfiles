@@ -26,5 +26,4 @@ Notes
 
 Preview
 -------
-![Preview](https://raw.github.com/sblargaba/dotfiles/master/awesome/bar/bar_preview.png 
-"Preview")
+![Preview](bar_preview.png "Preview")
